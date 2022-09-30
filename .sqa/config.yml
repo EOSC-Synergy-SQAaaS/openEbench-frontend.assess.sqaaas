@@ -18,36 +18,36 @@ sqa_criteria:
     repos:
       github.com/inab/openEbench-frontend git:
         commands:
-        - /usr/bin/env sh .sqa/script.cloudy-salmon-liger.sh
-        container: qc.acc_lovely-cardinal-barracuda
+        - /usr/bin/env sh .sqa/script.ugly-plum-urchin.sh
+        container: qc.acc_chewy-bronze-civet
   QC.Doc:
     repos:
       github.com/inab/oeb_general_docs find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.homely-cornflower-bat.sh
-        container: qc.doc_skanky-bistre-hummingbird
+        - /usr/bin/env sh .sqa/script.wheezy-aquamarine-ragdoll.sh
+        container: qc.doc_snippy-russet-lobster
       github.com/inab/oeb_general_docs git:
         commands:
-        - /usr/bin/env sh .sqa/script.breezy-peach-affenpinscher.sh
-        container: qc.doc_stinky-ultramarine-mandrill
+        - /usr/bin/env sh .sqa/script.slaphappy-firebrick-argentino.sh
+        container: qc.doc_slaphappy-mauve-cuttlefish
       github.com/inab/oeb_general_docs markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.stuffy-celadon-lemming.sh
-        container: qc.doc_cozy-violet-argentino
+        - /usr/bin/env sh .sqa/script.cloudy-brass-paradise.sh
+        container: qc.doc_blurry-plum-tapir
       github.com/inab/oeb_general_docs restructuredtext-lint:
         commands:
-        - /usr/bin/env sh .sqa/script.randy-gamboge-tzu.sh
-        container: qc.doc_sunny-puce-kingfisher
+        - /usr/bin/env sh .sqa/script.geeky-ochre-capuchin.sh
+        container: qc.doc_slaphappy-mauve-squirt
   QC.Lic:
     repos:
       github.com/inab/openEbench-frontend licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.sleepy-sapphire-lionfish.sh
-        container: qc.lic_woolly-white-bird
+        - /usr/bin/env sh .sqa/script.tacky-green-wallaby.sh
+        container: qc.lic_bumpy-flax-macaw
   QC.Ver:
     repos:
       github.com/inab/openEbench-frontend get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.lumpy-xanthic-wolfhound.sh
-        container: qc.ver_geeky-ivory-mongoose
+        - /usr/bin/env sh .sqa/script.dorky-dandelion-crab.sh
+        container: qc.ver_surly-periwinkle-hare
 timeout: 1800
