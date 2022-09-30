@@ -18,36 +18,36 @@ sqa_criteria:
     repos:
       github.com/inab/openEbench-frontend git:
         commands:
-        - /usr/bin/env sh .sqa/script.droopy-orchid-iguana.sh
-        container: qc.acc_squeaky-aqua-grouse
+        - /usr/bin/env sh .sqa/script.cloudy-salmon-liger.sh
+        container: qc.acc_lovely-cardinal-barracuda
   QC.Doc:
     repos:
       github.com/inab/oeb_general_docs find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.tacky-cerise-lemming.sh
-        container: qc.doc_gloppy-gold-axolotl
+        - /usr/bin/env sh .sqa/script.homely-cornflower-bat.sh
+        container: qc.doc_skanky-bistre-hummingbird
       github.com/inab/oeb_general_docs git:
         commands:
-        - /usr/bin/env sh .sqa/script.freaky-xanthic-kingfisher.sh
-        container: qc.doc_ugly-lime-dragonfly
+        - /usr/bin/env sh .sqa/script.breezy-peach-affenpinscher.sh
+        container: qc.doc_stinky-ultramarine-mandrill
       github.com/inab/oeb_general_docs markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.chummy-olivine-bullfrog.sh
-        container: qc.doc_ugly-turquoise-vulture
+        - /usr/bin/env sh .sqa/script.stuffy-celadon-lemming.sh
+        container: qc.doc_cozy-violet-argentino
       github.com/inab/oeb_general_docs restructuredtext-lint:
         commands:
-        - /usr/bin/env sh .sqa/script.homey-maroon-newt.sh
-        container: qc.doc_dorky-purple-macaque
+        - /usr/bin/env sh .sqa/script.randy-gamboge-tzu.sh
+        container: qc.doc_sunny-puce-kingfisher
   QC.Lic:
     repos:
       github.com/inab/openEbench-frontend licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.breezy-green-oriole.sh
-        container: qc.lic_skimpy-linen-squirt
+        - /usr/bin/env sh .sqa/script.sleepy-sapphire-lionfish.sh
+        container: qc.lic_woolly-white-bird
   QC.Ver:
     repos:
       github.com/inab/openEbench-frontend get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.stealthy-beige-woodpecker.sh
-        container: qc.ver_stealthy-maroon-oriole
+        - /usr/bin/env sh .sqa/script.lumpy-xanthic-wolfhound.sh
+        container: qc.ver_geeky-ivory-mongoose
 timeout: 1800
