@@ -1,0 +1,53 @@
+config:
+  credentials: []
+  project_repos:
+    github.com/EOSC-synergy/sqaaas-tooling:
+      branch: 1.7.0_no_kubectl
+      repo: https://github.com/EOSC-synergy/sqaaas-tooling
+    github.com/inab/oeb_general_docs:
+      branch: master
+      repo: https://github.com/inab/oeb_general_docs
+    github.com/inab/openEbench-frontend:
+      branch: master
+      repo: https://github.com/inab/openEbench-frontend
+environment:
+  JPL_DOCKERFORCEBUILD: enabled
+  JPL_KEEPGOING: enabled
+sqa_criteria:
+  QC.Acc:
+    repos:
+      github.com/inab/openEbench-frontend git:
+        commands:
+        - /usr/bin/env sh .sqa/script.droopy-orchid-iguana.sh
+        container: qc.acc_squeaky-aqua-grouse
+  QC.Doc:
+    repos:
+      github.com/inab/oeb_general_docs find_doc_files.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.tacky-cerise-lemming.sh
+        container: qc.doc_gloppy-gold-axolotl
+      github.com/inab/oeb_general_docs git:
+        commands:
+        - /usr/bin/env sh .sqa/script.freaky-xanthic-kingfisher.sh
+        container: qc.doc_ugly-lime-dragonfly
+      github.com/inab/oeb_general_docs markdownlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.chummy-olivine-bullfrog.sh
+        container: qc.doc_ugly-turquoise-vulture
+      github.com/inab/oeb_general_docs restructuredtext-lint:
+        commands:
+        - /usr/bin/env sh .sqa/script.homey-maroon-newt.sh
+        container: qc.doc_dorky-purple-macaque
+  QC.Lic:
+    repos:
+      github.com/inab/openEbench-frontend licensee:
+        commands:
+        - /usr/bin/env sh .sqa/script.breezy-green-oriole.sh
+        container: qc.lic_skimpy-linen-squirt
+  QC.Ver:
+    repos:
+      github.com/inab/openEbench-frontend get_git_tags.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.stealthy-beige-woodpecker.sh
+        container: qc.ver_stealthy-maroon-oriole
+timeout: 1800
