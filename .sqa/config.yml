@@ -2,11 +2,8 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: 1.7.0_no_kubectl
+      branch: release/1.7.4
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
-    github.com/inab/oeb_general_docs:
-      branch: master
-      repo: https://github.com/inab/oeb_general_docs
     github.com/inab/openEbench-frontend:
       branch: master
       repo: https://github.com/inab/openEbench-frontend
@@ -18,36 +15,46 @@ sqa_criteria:
     repos:
       github.com/inab/openEbench-frontend git:
         commands:
-        - /usr/bin/env sh .sqa/script.ugly-plum-urchin.sh
-        container: qc.acc_chewy-bronze-civet
+        - /usr/bin/env sh .sqa/script.shaggy-silver-goat.sh
+        container: qc.acc_greasy-plum-gorilla
   QC.Doc:
     repos:
-      github.com/inab/oeb_general_docs find_doc_files.py:
+      github.com/inab/openEbench-frontend find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.wheezy-aquamarine-ragdoll.sh
-        container: qc.doc_snippy-russet-lobster
-      github.com/inab/oeb_general_docs git:
+        - /usr/bin/env sh .sqa/script.sickly-burgundy-terrier.sh
+        container: qc.doc_shabby-cerise-dhole
+      github.com/inab/openEbench-frontend git:
         commands:
-        - /usr/bin/env sh .sqa/script.slaphappy-firebrick-argentino.sh
-        container: qc.doc_slaphappy-mauve-cuttlefish
-      github.com/inab/oeb_general_docs markdownlint:
+        - /usr/bin/env sh .sqa/script.fuzzy-firebrick-echidna.sh
+        container: qc.doc_gloppy-champagne-hornet
+      github.com/inab/openEbench-frontend markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.cloudy-brass-paradise.sh
-        container: qc.doc_blurry-plum-tapir
-      github.com/inab/oeb_general_docs restructuredtext-lint:
-        commands:
-        - /usr/bin/env sh .sqa/script.geeky-ochre-capuchin.sh
-        container: qc.doc_slaphappy-mauve-squirt
+        - /usr/bin/env sh .sqa/script.surly-cyan-budgerigar.sh
+        container: qc.doc_messy-mustard-russel
   QC.Lic:
     repos:
       github.com/inab/openEbench-frontend licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.tacky-green-wallaby.sh
-        container: qc.lic_bumpy-flax-macaw
+        - /usr/bin/env sh .sqa/script.skinny-gold-sloth.sh
+        container: qc.lic_hilly-apricot-wolf
+  QC.Sty:
+    repos:
+      github.com/inab/openEbench-frontend hadolint:
+        commands:
+        - /usr/bin/env sh .sqa/script.nerdy-myrtle-badger.sh
+        container: qc.sty_craggy-xanthic-dog
+      github.com/inab/openEbench-frontend jsonlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.smelly-fuchsia-heron.sh
+        container: qc.sty_hilly-razzmatazz-dane
+      github.com/inab/openEbench-frontend stylelint:
+        commands:
+        - /usr/bin/env sh .sqa/script.scanty-copper-squid.sh
+        container: qc.sty_lovely-viridian-tortoise
   QC.Ver:
     repos:
       github.com/inab/openEbench-frontend get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.dorky-dandelion-crab.sh
-        container: qc.ver_surly-periwinkle-hare
+        - /usr/bin/env sh .sqa/script.clammy-cyan-cuscus.sh
+        container: qc.ver_hasty-scarlet-monster
 timeout: 1800
