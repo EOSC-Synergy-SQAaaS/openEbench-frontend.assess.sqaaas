@@ -15,46 +15,46 @@ sqa_criteria:
     repos:
       github.com/inab/openEbench-frontend git:
         commands:
-        - /usr/bin/env sh .sqa/script.shaggy-silver-goat.sh
-        container: qc.acc_greasy-plum-gorilla
+        - /usr/bin/env sh .sqa/script.scummy-bistre-centipede.sh
+        container: qc.acc_greasy-purple-frigatebird
   QC.Doc:
     repos:
       github.com/inab/openEbench-frontend find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.sickly-burgundy-terrier.sh
-        container: qc.doc_shabby-cerise-dhole
+        - /usr/bin/env sh .sqa/script.sleepy-magenta-stingray.sh
+        container: qc.doc_tacky-saffron-dunker
       github.com/inab/openEbench-frontend git:
         commands:
-        - /usr/bin/env sh .sqa/script.fuzzy-firebrick-echidna.sh
-        container: qc.doc_gloppy-champagne-hornet
+        - /usr/bin/env sh .sqa/script.beady-platinum-okapi.sh
+        container: qc.doc_chewy-green-gorilla
       github.com/inab/openEbench-frontend markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.surly-cyan-budgerigar.sh
-        container: qc.doc_messy-mustard-russel
+        - /usr/bin/env sh .sqa/script.chummy-seashell-gharial.sh
+        container: qc.doc_droopy-heliotrope-yak
   QC.Lic:
     repos:
       github.com/inab/openEbench-frontend licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.skinny-gold-sloth.sh
-        container: qc.lic_hilly-apricot-wolf
+        - /usr/bin/env sh .sqa/script.nippy-ruby-beagle.sh
+        container: qc.lic_flaky-brown-dunker
   QC.Sty:
     repos:
       github.com/inab/openEbench-frontend hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.nerdy-myrtle-badger.sh
-        container: qc.sty_craggy-xanthic-dog
+        - /usr/bin/env sh .sqa/script.droopy-orchid-grasshopper.sh
+        container: qc.sty_chummy-dandelion-bonobo
       github.com/inab/openEbench-frontend jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.smelly-fuchsia-heron.sh
-        container: qc.sty_hilly-razzmatazz-dane
+        - /usr/bin/env sh .sqa/script.snoopy-buff-quoll.sh
+        container: qc.sty_cheeky-yellow-akbash
       github.com/inab/openEbench-frontend stylelint:
         commands:
-        - /usr/bin/env sh .sqa/script.scanty-copper-squid.sh
-        container: qc.sty_lovely-viridian-tortoise
+        - /usr/bin/env sh .sqa/script.hazy-eggplant-otter.sh
+        container: qc.sty_pasty-goldenrod-lemur
   QC.Ver:
     repos:
       github.com/inab/openEbench-frontend get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.clammy-cyan-cuscus.sh
-        container: qc.ver_hasty-scarlet-monster
+        - /usr/bin/env sh .sqa/script.randy-indigo-lobster.sh
+        container: qc.ver_cheeky-seashell-quetzal
 timeout: 1800
