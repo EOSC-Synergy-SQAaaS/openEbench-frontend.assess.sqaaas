@@ -15,46 +15,46 @@ sqa_criteria:
     repos:
       github.com/inab/openEbench-frontend git:
         commands:
-        - /usr/bin/env sh .sqa/script.woozy-azure-javanese.sh
-        container: qc.acc_boozy-cinnamon-bordeaux
+        - /usr/bin/env sh .sqa/script.snoopy-taupe-albatross.sh
+        container: qc.acc_silly-olive-crab
   QC.Doc:
     repos:
       github.com/inab/openEbench-frontend find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.freaky-periwinkle-schnauzer.sh
-        container: qc.doc_hazy-indigo-cassowary
+        - /usr/bin/env sh .sqa/script.stuffy-pink-mastiff.sh
+        container: qc.doc_stinky-sangria-rhinoceros
       github.com/inab/openEbench-frontend git:
         commands:
-        - /usr/bin/env sh .sqa/script.lovely-linen-wombat.sh
-        container: qc.doc_stinky-goldenrod-mastiff
+        - /usr/bin/env sh .sqa/script.leaky-magenta-gibbon.sh
+        container: qc.doc_chummy-cinnamon-flamingo
       github.com/inab/openEbench-frontend markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.squeaky-cobalt-fousek.sh
-        container: qc.doc_crabby-buff-sheepdog
+        - /usr/bin/env sh .sqa/script.thirsty-jade-stingray.sh
+        container: qc.doc_skinny-red-harrier
   QC.Lic:
     repos:
       github.com/inab/openEbench-frontend licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.scummy-salmon-tarantula.sh
-        container: qc.lic_lanky-black-squirrel
+        - /usr/bin/env sh .sqa/script.scummy-white-lionfish.sh
+        container: qc.lic_slaphappy-turquoise-moose
   QC.Sty:
     repos:
       github.com/inab/openEbench-frontend hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.nippy-violet-seahorse.sh
-        container: qc.sty_homey-aquamarine-dalmatian
+        - /usr/bin/env sh .sqa/script.sleazy-grey-emu.sh
+        container: qc.sty_flimsy-aquamarine-newt
       github.com/inab/openEbench-frontend jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.greasy-orchid-swan.sh
-        container: qc.sty_flaky-persimmon-frigatebird
+        - /usr/bin/env sh .sqa/script.hazy-cinnabar-chinook.sh
+        container: qc.sty_randy-xanthic-stingray
       github.com/inab/openEbench-frontend stylelint:
         commands:
-        - /usr/bin/env sh .sqa/script.messy-purple-dalmatian.sh
-        container: qc.sty_sloppy-seashell-ladybird
+        - /usr/bin/env sh .sqa/script.sleazy-salmon-sheep.sh
+        container: qc.sty_pretty-magnolia-snail
   QC.Ver:
     repos:
       github.com/inab/openEbench-frontend get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.squeaky-violet-buffalo.sh
-        container: qc.ver_skanky-linen-mist
+        - /usr/bin/env sh .sqa/script.flabby-rust-frog.sh
+        container: qc.ver_ready-rose-cassowary
 timeout: 1800
